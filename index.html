@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container shadow">
+      <div class="header">
+        <span class="name">CHATBOT</span><span class="status">online</span>
+      </div>
+
+      <!-- CHAT AREA -->
+
+      <div class="chat-area">
+        <p class="intro">
+          try to greet me! (type 'hi' or 'hola')
+        </p>
+      </div>
+
+      <!--  -->
+      <div class="text-area" id="style-3">
+        <form action="" id="send-form">
+          <input
+            type="text"
+            id="msg"
+            name="msg"
+            required
+            minlength="0"
+            maxlength="256"
+          />
+          <button type="submit" id="send">SEND</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

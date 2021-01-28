@@ -1,0 +1,106 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container {
+  background-color: aquamarine;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.shadow {
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 1px 3px 10px 6px #ccc;
+}
+/* ----------------- */
+
+.header {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.name {
+  display: block;
+}
+.status {
+  color: grey;
+  font-size: 0.7em;
+}
+
+/* ----------------- */
+
+.chat-area {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.message-body {
+  padding: 0.5em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.talk-bubble {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100px;
+  margin: 5px;
+  display: inline-block;
+  height: auto;
+  border-radius: 10px;
+  max-width: 75%;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+.message-body p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.time-stamp {
+  color: grey;
+  font-size: 0.7em;
+  display: block;
+  text-align: right;
+  margin-right: 13px;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: lightyellow;
+}
+
+.received {
+  background-color: lightsalmon;
+}
+
+/* ----------------- */
+
+.text-area form {
+  display: flex;
+}
+
+#msg {
+  height: 20px;
+  flex-grow: 1;
+}
+
+.intro {
+  text-align: center;
+  color: grey;
+  font-size: 1.5em;
+}
